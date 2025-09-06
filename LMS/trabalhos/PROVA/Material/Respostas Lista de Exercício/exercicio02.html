@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercício 02</title>
+  </head>
+  <body>
+    <label for="bebida">Cadastrar Bebida:</label>
+    <input type="text" id="bebida" name="bebida" />
+    <button onclick="adicionar()">Adicionar</button>
+    <p>Lista de Bebidas Cadastradas</p>
+    <ol id="lista">
+      <li>Café</li>
+      <li>Leite</li>
+      <li>Água</li>
+    </ol>
+    <script>
+      function adicionar() {
+        var bebida = document.getElementById("bebida").value.trim();
+        if (bebida === "") {
+          alert("O campo bebida está vazio!!");
+        } else {
+          var item = document.createElement("li");
+          item.innerHTML = bebida;
+          document.getElementById("lista").appendChild(item);
+        }
+      }
+    </script>
+  </body>
+</html>

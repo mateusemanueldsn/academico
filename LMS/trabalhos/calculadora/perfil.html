@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<style>
+    body {
+        font-family: sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    .perfil {
+        background-color: burlywood;
+        padding: 2%;
+        text-align: center;
+    }
+
+    img {
+        display: inline-block;
+    }
+
+    .nome {
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    .nome h2 {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nome h4 {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        border-radius: 10px;
+        padding: 1%;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="perfil">
+
+        <img src="#" id="img" width="200px">
+
+        <div class="nome">
+            <h2 id="nome">Nome</h2> - <h2 id="idade">Idade</h2><br>
+            <h4 id="genero">Gênero</h4><br>
+            <h4 id="data-nasc">Data de Nascimento</h4>
+            <br><br>
+            <h4 id="local">local</h4>
+        </div>
+
+        <br>
+
+        <input type="button" value="Recarregar" onClick="document.location.reload(true)">
+
+    </div>
+
+
+
+    </script>
+
+    <script>
+        var request = new XMLHttpRequest()
+
+        request.open('GET', 'https://randomuser.me/api/', true) //get tá pegando o negocio da api
+
+        request.onload = function () {
+            var dados = JSON.parse(this.response) //renomear para dados do json
+
+            if (request.status >= 200 && request.status < 400) {
+
+                var img = document.querySelector("img");
+                img.setAttribute("src", dados.results[0].picture.large);
+
+                document.getElementById('nome').innerHTML = dados.results[0].name.title + " " + dados.results[0].name.first + " " + dados.results[0].name.last;
+
+                document.getElementById('idade').innerHTML = dados.results[0].dob.age + " anos";
+
+                var dt = new Date(dados.results[0].dob.date);
+
+                if (dados.results[0].gender == "male") {
+                    document.getElementById('genero').innerHTML = "Homem";
+                    var data_nasc = document.getElementById('data-nasc').innerHTML = "Nascido em: " + dt.getDay() + "/ " + dt.getMonth() + "/ " + dt.getFullYear();
+                } else {
+                    document.getElementById('genero').innerHTML = "Mulher";
+                    var data_nasc = document.getElementById('data-nasc').innerHTML = "Nascida em: " + dt.getDay() + "/ " + dt.getMonth() + "/ " + dt.getFullYear();
+
+                }
+
+                document.getElementById("local").innerHTML = "Localizado em: " + dados.results[0].location.coordinates.latitude + "," + dados.results[0].location.coordinates.longitude + "<br> ou veja clicando <a href='http://maps.google.com?q=" + dados.results[0].location.coordinates.latitude + "," + dados.results[0].location.coordinates.longitude + "' target='_blank'>aqui</a>";
+
+            } else {
+                console.log('error')
+            }
+        }
+
+
+        request.send()
+    </script>
+</body>
+
+</html>

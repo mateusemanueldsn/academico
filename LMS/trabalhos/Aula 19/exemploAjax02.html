@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exemplo AJAX 01</title>
+  </head>
+  <body>
+    <h2>O Objeto XMLHttpRequest</h2>
+    <button type="button" onclick="loadDoc()">Request data</button>
+    <p id="demo"></p>
+  </body>
+
+  <script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var pessoa = JSON.parse(this.responseText);
+          var p = document.getElementById("demo");
+          p.innerHTML =
+            "<b>Nome:</b> " +
+            pessoa[0].nome +
+            "<br>" +
+            "<b>Email:</b> " +
+            pessoa[0].email +
+            "<br>" +
+            "<b>Aniversário:</b> " +
+            pessoa[0].nascimento;
+        }
+      };
+      xhttp.open("GET", "https://lmsqxd.herokuapp.com/usuarios");
+      xhttp.send(null);
+    }
+  </script>
+</html>

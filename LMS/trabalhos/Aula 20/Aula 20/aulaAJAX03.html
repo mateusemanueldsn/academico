@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Consulta AJAX com GET</title>
+  </head>
+  <body>
+    <h2>O Objeto XMLHttpRequest</h2>
+
+    <button onclick="carregarJSON()">Request Data</button>
+
+    <p id="angel"></p>
+  </body>
+  <script>
+    function carregarJSON() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status >= 200 && this.status < 300) {
+          var resposta = this.responseText;
+          var listaUsuarios = JSON.parse(resposta);
+          document.getElementById("angel").innerHTML =
+            "<b>Nome: </b>" +
+            listaUsuarios[0].nome +
+            "<br><b>Email: </b>" +
+            listaUsuarios[0].email +
+            "<br><b>Nascimento: </b>" +
+            new Date(listaUsuarios[0].nascimento).toLocaleDateString("pt-BR");
+        }
+      };
+      xhttp.open("GET", "https://lmsqxd.herokuapp.com/usuarios");
+      xhttp.send(null);
+    }
+  </script>
+</html>

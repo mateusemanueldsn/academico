@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lista de Aniversário</title>
+        <style>
+
+            body{
+                background-image: linear-gradient(to bottom,rgb(167, 202, 212), rgb(32, 123, 226), rgb(28, 57, 221));
+                background-position: center top;
+                background-attachment: fixed;
+                margin: 0;
+            }
+            img{
+                position: absolute;
+                left: 60%;
+            }
+            .cad{
+                background-color: rgba(0, 0, 0, 0.596);
+                color: white;
+                text-align: center;
+                padding: 5em 15pt;
+                width: 30%;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0 auto;
+                font-size: 12pt;
+                border-radius: 20pt;
+            }
+            .form{
+                padding: 20pt;
+            }
+            .form input{
+                padding: 10pt;
+                border-radius: 10pt;
+                width: 80%;
+                border:none;
+                outline: 0;
+            }
+            button{
+                background-color: darkcyan;
+                border: none;
+                padding: 1em;
+                border-radius: 10pt;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13pt;
+                color: white;
+                margin: 5pt;
+                outline: 0;
+                cursor: pointer;
+            }
+            button:hover{
+                color: darkcyan;
+                background-color: white;
+                box-shadow: 1px 1px 4px black;
+            }
+            #limpar{
+                background-color: darkorange;
+                color: black;
+                outline: 0;
+            }
+            #limpar:hover{
+                color: darkorange;
+                background-color: white;
+                box-shadow: 1px 1px 4px black;
+            }
+            
+            .cad h2{
+                text-transform: uppercase;
+                font-size: 25pt;
+            }
+            .list{
+                margin: 0 auto;
+                padding: 10pt;
+                text-align: center;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13pt;
+            }
+            .list table{
+                width: 100%;
+                text-align: center;
+                border-spacing: 0;
+            }
+            .list table th{
+                padding: 5pt;
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.637);
+                border-radius: 20pt 20pt 0 0;
+                margin: 10pt;
+                text-transform: uppercase;
+                width: 33%;
+            }
+            .list table td{
+                background-color: rgba(0, 139, 139, 0.63);
+                color: white;
+                padding: 15pt;
+                margin: 10pt 0;
+                color: white;
+                width: 25%;
+            }
+            .list table tr{
+                background-color: rgb(0, 139, 139);
+            }
+            .list .del{
+                background-color: rgb(87, 170, 5);
+                color: white;
+                box-shadow: none;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="figura.png" width="12%" alt="">
+        <section class="cad">
+            <div>
+                <br>
+                <h2>Lista de Aniversariantes</h2>
+                <div class="form">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" size="30" required placeholder="Nome Completo"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" size="30" required placeholder="E-mail"><br><br>
+
+                    <label for="nascimento" required>Data de Nascimento:</label><br>
+                    <input type="date" id="nascimento" required placeholder="Dia/Mês/Ano">
+                    <br><br>
+
+                    <button onclick="salvar();">Salvar</button>
+                    <button onclick="limpar();" id="limpar">Limpar</button>
+                </div>
+            </div>
+            </section>
+            <section class="list">
+            <div>
+                <table id="lista">
+                    <thead>
+                        <th>NOME</th>
+                        <th>Email</th>
+                        <th>Aniversário</th>
+                        <th><button onclick="ordenar();" id="order">Ordenar</button></th>
+                    </thead>
+                </table>
+            </div>
+        </section>
+        <script>
+            function salvar() {
+                var nome = document.getElementById('nome').value;
+                var email = document.getElementById('email').value;
+                var nasc = document.getElementById('nascimento').value;
+                var table = document.getElementById('lista');
+
+                if(nome,email,nasc != ''){
+
+                var td1 = document.createElement("td");
+                td1.appendChild(document.createTextNode(nome));
+
+                var td2 = document.createElement("td");
+                td2.appendChild(document.createTextNode(email));
+
+                var td3 = document.createElement("td");
+                td3.appendChild(document.createTextNode(nasc));
+
+                var td4 = document.createElement("button");
+                td4.classList.add('del');
+                td4.appendChild(document.createTextNode('Excluir')); 
+
+                var tr = document.createElement("tr");
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tr.appendChild(td3);
+                tr.appendChild(td4);
+                table.appendChild(tr);
+                }else{
+                    alert("Preencha todos os campos!");
+                }
+            }
+            function limpar(){
+                document.getElementById('nome').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('nascimento').value = '';
+            }
+            function ordenar() {
+                var table, rows, switching, i, x, y, shouldSwitch;
+                table = document.getElementById("lista");
+                switching = true;
+                while (switching) {
+                    switching = false;
+                    rows = table.rows;
+                    for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[0];
+                    y = rows[i + 1].getElementsByTagName("TD")[0];
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                    }
+                    if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    }
+                    }
+                }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2>Minha página da web</h2>
+	<p>Nunca chame document.write após o término do carregamento do documento.
+	Sobrescreverá o documento inteiro.</p>
+	<p>Ao clicar no botão abaixo toda a página será apagada. Pq?</p>
+	<button type="button" onclick="document.write(5 + 6)" value="teste">Clique Aqui!!</button>
+	<script>
+		var valor = 5 + 6;
+		document.write(valor);
+		console.log("Olá Mundo: " + valor);
+	</script>
+</body>
+</html> 

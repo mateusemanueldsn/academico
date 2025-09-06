@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Criando um elemento.</title>
+</head>
+<body>
+	<p>Clique no botão para criar um elemento P e adicioná-lo dentro da div.</p>
+	<button onclick="myFunction()">Clique</button>
+	<div id="div" style="border: 1px solid black; width: 200px;">Um elemento DIV</div>
+	<script>
+		var id = 1;
+		function myFunction() {
+			var para = document.createElement("p");
+			para.innerHTML = "Paragrafo: " + id;
+			document.getElementById("div").appendChild(para);
+			id++;
+		}
+	</script>
+
+</body>
+</html>
