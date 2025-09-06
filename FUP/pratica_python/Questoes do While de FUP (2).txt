@@ -1,0 +1,8 @@
+1 -Faça um programa que lê dois números inteiros ate a soma deles ser 2. No fim imprima dois números
+
+2 - Calculadora (Repetidas vezes leiam dois números a, b
+e uma operação Se operação for: "+" imprima a+b
+     "-" imprima a-b
+     "*" imprima a*b
+     "/" imprima a/b
+     "sair" do programa

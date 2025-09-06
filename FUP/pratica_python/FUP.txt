@@ -1,0 +1,72 @@
+#[rep] L1 - Mínimo
+
+
+#[rep] L1 - Quantos Ultrons você vê - Contar Elemento
+
+linha1 = map(int, raw_input().split(" "))
+linha2 = map(int, raw_input().split(" "))
+
+x = linha1[0]
+n = linha1[1]
+
+cont = 0
+for i in linha2 :
+	if i == x :
+		cont = cont + 1
+print(cont)
+----------------------------------------
+#[rep] L2 - Cabo de Guerra Jedi
+
+n = int(raw_input())
+vetor = map(int, raw_input().split(" "))
+
+forca_jedi = 0
+forca_sith = 0
+m = n/2
+for i in range(0,m) :
+	forca_jedi += vetor[i]
+for i in range(m,n) :
+	forca_sith += vetor[i]
+	
+if forca_jedi > forca_sith :
+	print("Jedi")
+elif forca_jedi < forca_sith :
+	print("Sith")
+else :
+	print("Empate")
+
+------------------------------------------
+#[rep] L3 - Conta Dígitos
+
+digito = int(raw_input())
+tel = int(raw_input())
+cont = 0
+while tel != 0 :
+	r = tel%10
+	if r == digito :
+		cont += 1
+	tel = tel/10
+print(cont)
+
+-------------------------------------------
+#[rep] L4 - Spok Palíndromo
+
+n = int(raw_input())
+antigo = n
+novo = 0
+while n != 0 :
+	r = n%10
+	n = n/10
+	novo = novo*10+r
+
+if antigo == novo :
+	print("1")
+else :
+	print("0")
+	
+
+
+
+
+
+
