@@ -1,0 +1,87 @@
+============= Questão 1==================================
+
+
+import random
+for i in range(6):
+    i = random.randint(0, 101)
+    print i
+
+
+
+==============Questão 2================================
+
+
+num = int(input("num: "))
+char = int(input("char: "))
+
+inteiro = num
+resto = 0
+cont = 0
+
+while inteiro != 0:
+    resto = inteiro%10
+    inteiro = inteiro//10
+    if resto == char:
+        cont = cont + 1
+    
+print(cont)
+
+==============Questão 3=================================
+
+par = 0
+impar = 0
+
+while True:
+    palavra = raw_input()
+    if palavra == 'parar':
+        break
+    elif float(palavra) % 2 == 0:
+        par = par + float(palavra)
+    elif float(palavra) % 2 == 1:
+        impar = impar + float(palavra)
+result = par/impar   
+
+print float(result)
+
+=====================Questão 4===============================
+
+a, b = raw_input(' ').split(" ")
+
+cont = 0
+soma = 0
+while int(a) > cont:
+    soma = soma + int(b)
+    cont = cont + 1
+    
+print soma
+
+
+==================Questão 5=============================
+
+
+n = int(raw_input('Digite um número: '))
+cont = 0
+for c in range(1, n + 1):
+    if n % c == 0:
+        cont = cont + 1
+if cont == 2:
+    print('Primo')
+else:
+    print('não é primo')
+
+==================Questão 6=============================
+n = int(raw_input())
+L = map(int, raw_input().split())
+
+for i in range(0, n-1):
+    k = i
+    for j in range(i+1, n):
+        if L[j] < L[k]:
+            k = j
+    aux = L[i]
+    L[i] = L[k]
+    L[k] = aux
+
+print L    
+ 
+
