@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+.aside-menu{
+  display: flex;
+}
+.marcado{
+  color: rgb(113, 32, 115);
+}
+
+.aside-menu p{
+  color: black;
+  font-weight: bold;
+  font-family: 'Frutiger Bold';
+  padding: auto 10px;
+}
+.aside-menu p:hover{
+  color: rgb(113, 32, 115);
+}
+.aside-menu a:hover{
+  color: rgb(113, 32, 115);
+}
+.aside-menu ul{
+  margin: 0;
+  padding: 0;
+}
+.aside-menu i{
+  font-size: 3em;
+}

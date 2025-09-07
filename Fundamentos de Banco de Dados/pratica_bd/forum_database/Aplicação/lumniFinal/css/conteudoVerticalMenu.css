@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+.perfilconteudoVerticalMenuUser{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+.perfilconteudoVerticalMenuUser .perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15pt;
+}
+.perfilconteudoVerticalMenuUser .perfil input{
+    border: none;
+    padding: 12pt;
+    font-size: 12pt;
+    border-radius: 30pt;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.perfilconteudoVerticalMenuUser button{
+    background-color: rgb(113, 32, 115);
+    color: white;
+    padding: 10pt 30pt;
+    border: none;
+    font-size:12pt;
+    border-radius: 30pt;
+    cursor: pointer;
+    outline: 0;
+}
+.perfilconteudoVerticalMenuUser .perfil i{
+    background-color: rgb(148, 148, 148);
+    color: whitesmoke;
+    font-size: 8em;
+    padding:30pt;
+    margin: 0 0 10pt 0;
+    border-radius: 100%;
+}
+.perfilconteudoVerticalMenuUser .infoPerfil form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perfilconteudoVerticalMenuUser .infoPerfil form input{
+    width: 35em;
+    margin: 10pt 0;
+}
+
+.perfilconteudoVerticalMenu .opcoesNoticia a{
+    color: white;
+
+}
+.perfilconteudoVerticalMenu .opcoesNoticia form button{
+    background-color: white;
+    color: rgb(26, 26, 26);
+    margin-left: -30pt;
+    padding: 0pt;
+}
+
+.perfilconteudoVerticalMenu button{
+    background-color: rgb(113, 32, 115);
+    color: white;
+    padding: 10pt;
+    border: none;
+    font-size:12pt;
+    border-radius: 30pt;
+    cursor: pointer;
+    outline: 0;
+}
+
+.opcoesNoticia{
+    padding: 0;
+    margin: 0;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+}
+.opcoesNoticia form{
+    align-items: flex-end;
+    margin: 0 28em 0 4pt;
+}
+#newN{
+    font-weight: bolder;
+    padding: 10pt  15pt;
+}
+
+.containerNoticia ul{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerNoticia li{
+    background-color: white;
+    margin: 10pt 5pt;
+    padding: 10pt;
+    border-radius: 10pt;
+}
+.containerNoticia li div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.containerNoticia li div button{
+    font-weight: bolder;
+    outline: 0;
+}
+.containerNoticia li div button a{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.containerNoticia li div button a:hover{
+    color: white;
+}
+
+.formNoticia{
+    display: flex;
+    flex-direction: column;
+}
+
+.formNoticia h1{
+    font-size: 30pt;
+    padding: 0;
+    margin: 0 0 5pt;
+}
+
+.formNoticia form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+.formNoticia textarea{
+    border: none;
+    padding: 12pt;
+    font-size: 12pt;
+    border-radius: 30pt;
+    outline: none;
+    font-family: 'Frutiger Light';
+    resize: none;
+
+}
+.formNoticia input,textarea{
+    width: 100%;
+    margin: 10pt 0 0 -7em;
+}
+
+
+.formNoticia button{
+    background-color: rgb(113, 32, 115);
+    color: white;
+    padding: 10pt 30pt;
+    border: none;
+    font-size:12pt;
+    border-radius: 30pt;
+    cursor: pointer;
+    font-weight: bolder;
+    margin: 10pt 0 0 10em;
+    outline: 0;
+}
+.perfilconteudoVerticalMenuView{
+    padding: 0 5em 0 0;
+}
+
+.perfilconteudoVerticalMenuView p{
+    color: black;
+    text-align: justify;
+}
+
+.perfilconteudoVerticalMenuView button{
+    background-color: rgb(113, 32, 115);
+    color: white;
+    padding: 10pt 30pt;
+    border: none;
+    font-size:12pt;
+    border-radius: 30pt;
+    cursor: pointer;
+    font-weight: bolder;
+    outline: 0;
+}
+.perfilconteudoVerticalMenuView button a{
+    color: white;
+}
