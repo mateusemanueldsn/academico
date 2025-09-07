@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Fonte Textos';
+    src:url("../fonts/DESIB___.ttf");
+}
+
+body{
+    background-image: url("../images/Retângulo 1@2x.png");
+    
+}
+
+h2{
+    color: white;
+    text-align: right;
+    margin-right: 180px;
+    font-size: 50px;
+}
+
+p{
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-right: 180px;
+    margin-left: 880px;
+   
+
+}
+
+
+div#menu{
+    background-color: rgba(36, 35, 35, 0.2);
+    margin: -20px;
+    padding: 30px;
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: 950px;
+    margin: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25pt;
+    font-family: 'Fonte Textos', Times, serif;
+    
+}
+
+img#logo {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 150px;
+    
+}
+
+img#social{
+    position: relative;
+    margin: 10px;
+    left:290px;
+    top: -58px;
+}
+
+
+
+img#perfil{
+    position: absolute;
+    width: 600px;
+    top: 280px;
+    left: 90px;
+}
+
+h2#perfil-legenda{
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    top: 740px;
+    left: -520px;
+}
+
+

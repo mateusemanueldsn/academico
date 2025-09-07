@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p>
+		Clique no botão para obter o nome do nó do elemento pai do elemento li na lista.
+	</p>
+	<button onclick="myFunction()">Try it</button>
+	<p>Examplo de Lista:</p>
+	<ul>
+		<li id="li">Café</li>
+		<li>Chá</li>
+		<li>Água</li>
+		<li>Leite</li>
+		<li>Yorgut</li>
+	</ul>
+	<p id="demo"></p>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("li").parentElement.nodeName;
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+</body>
+</html>

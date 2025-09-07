@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+.cabecalhoPrincipal .container{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalhoPrincipal-nav {
+    display: flex;
+
+}
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+
+}
+
+@media all and (max-width: 500px){
+    .cabecalhoPrincipal .container{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+    .cabecalhoPrincipal-titulo{
+        flex-basis: 100%;
+    }
+    .cabecalhoPrincipal-nav {
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        flex-basis: 100%;
+    }
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+    
+    }
+}

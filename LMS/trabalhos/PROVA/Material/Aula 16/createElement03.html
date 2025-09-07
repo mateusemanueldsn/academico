@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Criando um elemento.</title>
+</head>
+<body>
+	<input type="texto" name="bebida" id="bebida" value="Agua">
+	<button onclick="myFunction()">Clique</button>
+	<ul id="lista">
+		<li>Café</li>
+		<li>Chá</li>
+	</ul>	
+	<script>
+		function myFunction() {
+			var novoItem = document.createElement("li");
+			var texto = document.getElementById("bebida").value;
+			var nodeTexto = document.createTextNode(texto);
+			novoItem.appendChild(nodeTexto);
+
+			var lista = document.getElementById("lista");
+			lista.insertBefore(novoItem, lista.firstElementChild);
+			//lista.insertBefore(novoItem, lista.childNodes[0]);
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body onload="checkCookies()">
+
+	<p id="demo"></p>
+
+	<script>
+		function checkCookies() {
+			var text = "";
+			if (navigator.cookieEnabled == true) {
+				text = "Cookies estão habilitados.";
+			} else {
+				text = "Cookies não estão habilitados.";
+			}
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+</body>
+</html>

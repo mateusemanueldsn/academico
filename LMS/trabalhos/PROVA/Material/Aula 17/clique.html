@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evento de clique</title>
+</head>
+<body>
+
+	<h1 onclick="this.innerHTML=Date()">Data de hoje: </h1>
+
+	<button id="btn1">Clicar</button>
+
+	<p id="p">Clicar</p>
+
+
+	<script type="text/javascript">
+		var elemento1 = document.getElementById("btn1");
+		elemento1.onclick = function(){
+			alert(Date());
+		}
+
+		var elemento2 = document.getElementById("p");
+		elemento2.addEventListener("click", function (event){
+			elemento2.innerHTML += "<br> Botão Esquerdo";
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body { 
+	background-color: #b5a789;
+	font-family:      Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+}
+
+#header {
+	background-color: #675c47;
+}
+
+#drinks {
+	background-color: #efe5d0;
+}
+
+#main {
+	background: #efe5d0;
+}
+#nav {
+    background-color: #efe5d0;
+}
+
+#sidebar {
+	background: #efe5d0;
+}
+
+#footer {
+  background-color: #675c47;
+  color:            #efe5d0;
+}

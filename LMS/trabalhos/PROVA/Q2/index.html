@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Questão 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <Fieldset>
+            <Legend>Cálculo de IMC</Legend>
+            <label for="">Peso:</label>
+            <input type="text" placeholder="Kg" id="peso"><br><br>
+            <label for="">Altura:</label>
+            <input type="text" placeholder="Altura e Metros" id="altura">
+            <br><br>
+            <button onclick="calcular();">Calcular</button>
+            <button onclick="limpar();">Limpar</button>
+        </Fieldset>
+        <fieldset>
+            <legend>Resultado</legend>
+            Valor do IMC: <p id="total"></p>
+            Classificação: <p id="class"></p>
+        </fieldset>
+    </body>
+    <script>
+        function calcular(){
+            var peso = document.getElementById("peso").value;
+            var altura = document.getElementById("altura").value;
+            var imc = Number(peso)/(Number(altura)*Number(altura));
+            document.getElementById("total").innerHTML = imc;
+
+            if(imc < 18.5){
+                document.getElementById("class").innerHTML = "Magreza";
+            }else if((imc >= 18.5) && (imc <=24.9)){
+                document.getElementById("class").innerHTML = "Normal";
+            }else if((imc >= 25) && (imc <=29.9)){
+                document.getElementById("class").innerHTML = "Sobrepeso";
+            }else if((imc >= 30) && (imc <=39.9)){
+                document.getElementById("class").innerHTML = "Obesidade";
+            }else if(imc > 40){
+                document.getElementById("class").innerHTML = "Obesidade Morbita";
+            }
+        }
+
+        function limpar(){
+            document.getElementById("peso").value ="";
+            document.getElementById("altura").value ="";
+        }
+    </script>
+</html>

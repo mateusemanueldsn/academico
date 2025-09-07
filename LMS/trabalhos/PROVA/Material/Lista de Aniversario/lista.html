@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Pousada Lua Estrela</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+</head>
+
+<body>
+  <br />
+  <br />
+  <div class="container col-lg-offset-2" style="background-color: #F8F8FF">
+    <div class="bs-example" data-example-id="form-group-height-sizes">
+      <div class="form-horizontal">
+        <fieldset>
+          <legend>Lista de Aniversário</legend>
+          <div class="form-group col-lg-4">
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="nome">Nome:
+              </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nome" value="" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="valor">Email:
+              </label>
+              <div class="col-sm-10">
+                <input type="Email" class="form-control" id="email" value="" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="valor">Data:
+              </label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="data" value="" required />
+              </div>
+            </div>
+            <button class="btn btn-primary" name="acao" onclick="inserir()">
+              Inserir
+            </button>
+            <input type="reset" class="btn btn-default" value="Limpar" />
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <br />
+    <fieldset>
+      <legend>Lista de Amigos</legend>
+      <table id="tabela" class="table table-bordered table-striped">
+        <tr>
+          <td>ID</td>
+          <td>NOME</td>
+          <td>Email</td>
+          <td>Aniversário</td>
+          <td>Excluir</td>
+        </tr>
+      </table>
+    </fieldset>
+  </div>
+  <script>
+    var id = 1;
+    function inserir() {
+      var nome = document.getElementById("nome").value;
+      var email = document.getElementById("email").value;
+      var data = document.getElementById("data").value;
+      data = new Date(data).toLocaleDateString("pt-BR", { timeZone: "UTC" });
+
+      var tr = document.createElement("tr");
+      var tabela = document.getElementById("tabela");
+
+      var td1 = document.createElement("td");
+      var textoTd1 = document.createTextNode(id);
+      td1.appendChild(textoTd1);
+      id++;
+
+      var td2 = document.createElement("td");
+      var textoTd2 = document.createTextNode(nome.trim());
+      td2.appendChild(textoTd2);
+
+      var td3 = document.createElement("td");
+      var textoTd3 = document.createTextNode(email.trim());
+      td3.appendChild(textoTd3);
+
+      var td4 = document.createElement("td");
+      var textoTd4 = document.createTextNode(data);
+      td4.appendChild(textoTd4);
+
+      var td5 = document.createElement("td");
+      var botao = document.createElement("button");
+      var textoBtn = document.createTextNode("Excluir");
+      botao.appendChild(textoBtn);
+      td5.appendChild(botao);
+
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      tr.appendChild(td3);
+      tr.appendChild(td4);
+      tr.appendChild(td5);
+      tabela.appendChild(tr);
+
+      document.getElementById("nome").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("data").value = "";
+
+      botao.onclick = function () {
+        tabela.removeChild(tr);
+        id--;
+        reordenarIds()
+      }
+
+    }
+    function reordenarIds() {
+      var tabela = document.getElementById("tabela");
+      var listaTR = tabela.getElementsByTagName("tr");
+      for (var i = 0; i < listaTR.length; i++) {
+        if (i > 0)
+          listaTR[i].firstElementChild.innerHTML = i;
+      }
+    }
+
+  </script>
+</body>
+
+</html>
+</body>
+
+</html>

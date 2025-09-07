@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+	<p> Este exemplo usa o método <strong>addEventListener()</strong> para anexar um evento "dblclick" a um elemento p. </p>
+
+	<p id="demo"> Clique duas vezes em mim. </p>
+
+
+	<script>
+		document.getElementById("demo").addEventListener("dblclick", myFunction);
+
+		function myFunction() {
+			document.getElementById("demo").innerHTML = "Eu fui clicado duas vezes!";
+		}
+	</script>
+
+</body>
+</html>
+
+

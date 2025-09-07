@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recuperando elementos JavaScript</title>
+</head>
+<body>
+<h2 class="intro">Um cabeçalho com a classe = "intro"</h2>
+<p class="intro">Um parágrafo com a classe="intro".</p> 
+
+<p id="teste">Clique no botão para adicionar uma cor de fundo a todos os elementos com class = "teste".</p>
+
+<p><strong>Nota:</strong> O método querySelector não é suportado no Internet Explorer 8 e versões anteriores</p>
+
+Sobrenome: <input type="text" name="sobrenome">
+
+<button onclick="minhaFuncao()">Clicar</button>
+<script type="text/javascript">
+	function minhaFuncao(){
+		var elemento2 = document.querySelector("p");
+		alert(elemento2.innerHTML);
+	}
+</script>
+</body>
+</html>
+
+innerHTML 
