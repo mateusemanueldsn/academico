@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light';
+    src: url("../fontes/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fontes/Frutiger\ Bold.ttf");
+}
+
+main{
+    background: url("../imagens/bg-03.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+nav{
+  padding: 1rem 1rem 1rem 6rem;
+}
+
+.icons-nav form i{
+  background-color: rgb(63, 22, 91);
+}
+.icons-nav form i:hover{
+  color: white;
+}
+
+section{
+    padding: 0 6em;
+    background-color: rgb(31, 11, 44);
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+}
+section ul{
+  display: flex;
+  margin:0;
+  justify-content: space-evenly;
+  font-family: 'Frutiger 45 Light';
+  align-items: center;
+}
+
+section.acessorios{
+  background-color: rgb(34, 12, 49);
+  padding: 2em 0;
+  z-index: 6;
+}
+section li a{
+  color: white;
+  padding: 20pt;
+}
+section li a:hover{
+  color: black;
+  text-decoration: none;
+  background-color: white; 
+}
+
+.pag {
+  background-color: white;
+  padding: 2em 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pag ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: left;
+  align-items: top;
+}
+.pag li{
+  margin: 0 15pt;
+}
+.pag a{
+  color: black;
+  text-decoration: none;
+}
+.pag a:hover{
+  color: rgb(63, 22, 91);
+}
+.pag h2{
+  color: black;
+  text-align: left;
+  font-size: 15pt;
+}
+.pag p{
+  color: black;
+  font-size: 13pt;
+}
+.pag form{
+  display: flex;
+  align-items: center;
+
+}
+.pag button{
+  border: none;
+  background-color: rgb(63, 22, 91);
+  padding: 8pt;
+  font-family: 'Frutiger Bold';
+  color: white;
+  border-radius: 0 10pt 10pt 0;
+  outline: 0;
+
+}
+.pag input {
+  padding: 8pt;
+  border-radius:  10pt 0 0 10pt;
+  border:none;
+  background-color: rgb(236, 236, 236);
+  width: 50%;
+  outline: 0;
+}
+.pag .redes{
+  display: flex;
+  justify-content: left;
+}
+.pag .f-pag {
+  width: 80%;
+  line-height: 280%;
+}
+h2{ 
+    text-align: left;
+    font-size: 5em;
+    line-height: 150%;
+}
+
+main{
+    margin-top: 5.5%;
+    padding: 2em 6em;
+    background-color: rgb(63, 22, 91);
+}
+main h2{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    padding: 10pt;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .swiper-slide .imgBx{
+    width: 100%;
+  }
+  .swiper-slide .details{
+    box-sizing: border-box;
+    font-size: 12pt;
+    padding: 5pt;
+    text-align: center;
+  }
+  .details p{
+    color: black;
+  }
+  .details button{
+    border:none;
+    border-radius: 10pt;
+    font-size: 15pt;
+    background-color: rgb(63, 22, 91);
+    color: white;
+    outline: none;
+    box-shadow: 1px 1px 4px black;
+    padding: 10pt;
+  }
+  .details button:hover{
+    background-color: white;
+    color: rgb(63, 22, 91);
+  }
+  .details button i{
+    float: right;
+    font-size: 20pt;
+    padding: 0 2pt;
+  }
+  
+  main .dest{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  main .dest li{
+    text-align: center;
+    box-sizing: 1px 1px 4px;
+    background-color: white;
+    padding: 15pt;
+    margin: 1em;
+  }
+  footer{
+    padding: 10pt;
+  }
+
+@media (max-width:600px){
+  nav{
+    padding: 10pt;
+  }
+  main{
+    margin-top: -10%;
+    padding: 10pt;
+  }
+  main h2{
+    font-size: 20pt;
+  }
+
+  main .dest{
+    grid-template-columns: auto auto;
+  }
+
+  .acessorios ul{
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .acessorios li{
+    margin: 0;
+    text-align: center;
+  }
+  .pag ul{
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  .pag li{
+    width: 100%;
+  }
+  .pag h2{
+    text-align: center;
+    font-size: 15pt;
+  }
+  .pag p{
+    text-align: center;
+  }
+  .pag input{
+    width: 100%;
+  }
+  .redes li a{
+    clear: both;
+    margin: 10pt 5pt;
+  }
+  footer{
+    padding: 0;
+  }
+
+  
+}

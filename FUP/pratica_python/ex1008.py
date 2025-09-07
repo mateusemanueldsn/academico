@@ -1,6 +1,0 @@
-NUMBER = int(input())
-HORAS = int(input())
-REMUNERACAO = float(input())
-SALARY = (HORAS*REMUNERACAO)
-print ('NUMBER =',NUMBER)
-print ('SALARY = U$ {:.2F}'.format(SALARY))

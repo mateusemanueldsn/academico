@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light';
+    src: url("../fontes/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fontes/Frutiger\ Bold.ttf");
+}
+
+
+main{
+    background-image: url("../imagens/background.jpg");
+    background-size: cover;
+}
+h2{
+    text-align: left;
+    font-size: 3em;
+    line-height: 150%;
+}
+
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+main input,textarea{
+    background-color: rgba(168, 168, 168, 0.24);
+    border: none;
+    padding: 15pt;
+    margin: 10pt 0;
+    width: 100%;
+    border-radius: 15pt;
+    outline: 0;
+    color: white;
+}
+
+
+
+main ul{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    padding: 6em;
+   
+}
+main button{
+    border: none;
+    background-color: rgba(63, 22, 91, 0.568);
+    width: 25%;
+    font-size: 15pt;
+    font-family: 'Frutiger Bold';
+    padding: 10pt;
+    border-radius: 10pt;
+    margin: 15pt 0;
+    color: white;
+
+}
+main button:hover{
+    background-color: white;
+    color: rgb(63, 22, 91);
+    font-family: 'Frutiger Bold';
+    box-shadow: 1px 1px 4px black;
+}
+
+main li{
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+}
+main li h2{
+    text-align: center;
+}
+
+
+
+
+footer{
+    display: grid;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+}
+
+#princ{
+    padding-top: 20pt;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+.contato {
+    text-align: left;
+    margin-left: 6em;
+}
+.contato p{
+    font-family: 'Frutiger Bold';
+}
+.social{
+    margin-top: -10%;
+}

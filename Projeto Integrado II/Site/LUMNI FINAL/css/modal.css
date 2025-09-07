@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light';
+    src: url("../fontes/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fontes/Frutiger\ Bold.ttf");
+}
+
