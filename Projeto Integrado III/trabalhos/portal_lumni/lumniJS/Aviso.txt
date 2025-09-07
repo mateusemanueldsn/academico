@@ -1,0 +1,3 @@
+Pra reinstalar todas as depednênciais individuais de cada projeto, basta inserir no terminal o comando:
+
+npm install, ou node install

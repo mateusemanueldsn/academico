@@ -1,0 +1,380 @@
+.presentation-forum{
+    background-image: url('../Graphic/background/forum.jpeg');
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.presentation-forum div{
+    background-color: rgba(114, 32, 115, 0.61);
+    padding: 16em 0;
+}
+
+.presentation-forum div p{
+    text-align: center;
+    color: white;
+}
+.presentation-forum div h2{
+    font-size: 6em;
+    margin: 0;
+    color: white;
+}
+.presentation-forum p{
+    font-size: 2em;
+    margin: 0;
+}
+
+
+.containerForum aside ul{
+    list-style: none;
+    margin: 0;
+}
+
+.forumConteudo {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-image: url("../Graphic/background/wbforum.jpg");
+    background-size: cover;
+    background-position: top center;
+    justify-content: center;
+    padding: 3em 10em;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 30pt;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: rgb(172, 172, 172);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(114, 32, 115);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #forum-user img{
+    width: 55%;
+    border-radius: 50%;
+}
+.ofc-forum{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    vertical-align: top;
+    align-items: center;
+    padding: 2em 10em;
+}
+.conteudo-post h2{
+    text-align: left;
+}
+.tematicas{
+    padding:0;
+}
+.tematicas ul{
+    margin: 0;
+    padding: 0;
+}
+.tematicas h2{
+    text-align: left;
+    font-size: 2em;
+    
+}
+.tematicas li label{
+    text-align: left;
+    font-size: 14pt;
+}
+.aside-forum div{
+    padding: 2em;
+    background-color: rgba(63, 22, 91, 0.904);
+    display: grid;
+    box-shadow: 1px 1px 4px black;
+    grid-template-columns: auto;
+    vertical-align: top;
+    width: 100%;
+    margin: 0 10pt 10pt 0;
+}
+.aside-forum div h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.aside-forum div a{
+    color: white;
+    font-family: 'Frutiger 45 Light';
+    margin: 5pt 0;
+}
+.aside-forum div h3{
+    margin: 5pt 0;
+}
+.main-forum{
+    margin-top: 8em;
+}
+.post-user{
+    background-color: white;
+    box-shadow: 1px 1px 4px snow;
+    border-radius: 0 20pt 0 20pt;
+    margin-bottom: 2em;
+    border-bottom: 10px solid rgb(63, 22, 91);
+    box-shadow: 1px 1px 4px rgb(170, 170, 170);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.post-user i{
+    margin: 0 3pt;
+}
+.post-user div.perfil-user{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 40pt;
+}
+.post-user div.perfil-user h4{
+    color: rgb(0, 0, 0);
+    font-size: 18pt;
+    margin: 2pt 0;
+    text-align: center;
+}
+.post-user div.perfil-user p#on{
+    color: rgb(19, 230, 0);
+    margin: 0;
+}
+.post-user div.perfil-user p#off{
+    color: rgb(209, 23, 32);
+    margin: 0;
+}
+
+.post-user div.perfil-user img{
+    width: 100%;
+    border-radius: 50%;
+}
+.post-user div.conteudo-post{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 480pt;
+    padding: 5pt 20pt 0 20pt;
+    margin: 0;
+    cursor: pointer;
+}
+.post-user div legend{
+    background-color: rgb(113,32,115);
+    padding: 10pt;
+    color: white;
+    width: 22%;
+    border-radius: 20pt;
+    font-family: 'Frutiger Bold';
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20pt;
+    text-align: center;
+}
+
+
+.post-user div legend i{
+    margin: 2pt;    
+    float: right;
+}
+.post-user div.conteudo-post strong{
+    cursor: pointer;
+    font-family: 'Frutiger Bold';
+}
+
+.post-user div.conteudo-post p{
+    color: black;
+    text-align: justify;
+    margin: 0;
+    padding: 0 0 15pt 0;
+}
+
+.post-user div.conteudo-post label{
+    color: rgb(136, 135, 135);
+    font-size: 13pt;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.opc-post{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.opc-post p{
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.opc-post i{
+    font-size: 16pt;
+}
+
+.more2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.more2 p{
+    font-size: 15pt;
+    font-family: 'Frutiger Bold';
+    text-align: center;
+    color: rgb(63, 22, 91);
+}
+.more2 a{
+    color: rgb(63,22,91);
+}
+.more2 i{
+    padding: 5pt;
+}
+
+.opcPosts{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+}
+.opcPosts form {
+    flex-grow: 5;
+}
+
+.opcPosts button {
+    border: none;
+    background-color: rgb(63,22,91);
+    color: white;
+    font-family: 'Frutiger Bold';
+    font-size: 14pt;
+    padding: 12pt 15pt;
+    cursor: pointer;
+    outline: 0;
+    margin: 0 5pt;
+    border-radius: 30pt;
+}
+.opcPosts button a{
+    text-decoration: none;
+    color: white;
+}
+.opcPosts i{
+    font-size: 4em;
+    padding: 0;
+    margin: 0 0 0 15pt;
+}
+
+
+.opcPosts form{
+    display: flex;
+    justify-content: left;
+    margin: 0 0 0 5pt;
+}
+.opcPosts select{
+    border: none;
+    font-size: 14pt;
+    padding: 12pt;
+    background:none;
+    outline: 0;
+}
+.opcPosts option{
+    border: none;
+}
+/*Menu do Usuário*/
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -50%;
+    background-color: white;
+    min-width: 120px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 10pt;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content i{
+    margin: 0 2pt;
+}
+  
+.dropdown a:hover {background-color: rgb(63, 22, 91); color: white;}
+  
+.show {display: block;}
+
+#forum-user button{
+    padding: 0;
+    margin: 0;
+    width: 55pt;
+}

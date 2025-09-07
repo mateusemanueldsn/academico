@@ -1,0 +1,87 @@
+.promo-slider{
+    background-color: rgb(43, 43, 43);
+    padding: 0em;
+    margin-bottom: -5pt;
+}
+.promo-slider #slider{
+    overflow: hidden;
+    margin: 0;
+}
+
+.promo-slider #slider figure{
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 18%;
+    float: left;
+    box-shadow: 1px 1px 4px black;
+    margin: 0;
+    cursor: pointer;
+}
+
+@keyframes slider{
+    0% {
+        left: -0%;
+    }
+    20%{
+        left: -62%;
+    }
+    50%{
+        left: 0%;
+    }
+    75%{
+        left: 0%;
+    }
+    100%{
+        left: 0%;
+    }
+
+}
+
+
+.etq-promo{
+    padding: 0;
+}
+
+.promo-slider .etq-promo ul{
+    display: grid;
+    grid-template-columns:  auto auto auto auto;
+    justify-content:space-around;
+    color: white;
+    margin-left: 0%;
+    padding: 0;
+}
+.promo-slider .etq-promo li{
+    margin: 20pt 5pt;
+    padding: 15pt;
+    width: 80%;
+    background-color: rgb(16,18,64);
+    box-shadow: 1px 1px 4px black;
+    cursor: pointer;
+    border-radius: 50pt;
+}
+
+.promo-slider .etq-promo li:hover{
+    background-color: white;
+    color: rgb(16,18,64);
+}
+
+
+.promo-slider .etq-promo li legend{
+    margin: 5pt 10pt;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.promo-slider .etq-promo i{
+    text-align: center;
+    margin: 0 5pt;
+    font-size: 4em;
+    float: left;
+}
+
+

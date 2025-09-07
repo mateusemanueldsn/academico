@@ -1,0 +1,63 @@
+.FormConta .submitLogin{
+    border: none;
+    background-color: rgb(16,18,64);
+    color: white;
+    font-family: 'Frutiger Bold';
+    font-size: 14pt;
+    padding: 8pt 18pt;
+    cursor: pointer;
+    border-radius: 10pt;
+    outline: none;
+}
+
+
+
+
+.UserOptionsLogin{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: auto 0;
+}
+
+.UserOptionsLogin button{
+    border: none;
+    border-radius: 10pt;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 6pt 10pt;
+    color: white;
+    margin: 10pt auto;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+
+.UserOptionsLogin #Cad{
+    background-color: rgb(63,22,91);
+}
+
+.UserOptionsLogin #Log{
+    background-color: rgb(16,18,64);
+}
+
+
+
+.UserOptionsLogin #Log{
+    background-color: rgba(16, 18, 64, 0.5);
+}
+
+
+
+.UserOptionsLogin p{
+    font-family: 'Frutiger 45 Light';
+    font-size: 12pt;
+    margin: auto 5pt;
+}
+
+.Login .FormConta .typeUserAcess{
+    display: flex;
+    margin: 10pt;
+}
+
+
