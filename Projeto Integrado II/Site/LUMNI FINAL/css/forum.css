@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fontes/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fontes/Frutiger\ Bold.ttf");
+}
+body{
+    background-image: url("../imagens/bg-4.jpeg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    padding: 2em 6em;
+    background-color: rgba(15, 5, 22, 0.952);
+}
+h2{
+    text-align: left;
+    font-size: 2em;
+    line-height: 150%;
+} 
+fieldset{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 25pt;
+}
+
+.icons-nav form i{
+    background-color: rgb(29, 10, 43);
+}
+
+.for-filters{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.forum-div{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: top;
+}
+.forum-div li{
+    margin: 10pt 15pt;
+}
+
+.forum-opc{
+    background-color: rgb(63, 22, 91);
+    padding: 2em 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.forum-opc ul{
+    display: flex;
+    align-items: center;
+}
+.forum-opc li a{
+    color: white;
+    font-family: 'Frutiger 45 Light'; 
+    margin: 10pt;
+    padding: 15pt;
+    align-items: center;
+}
+.forum-opc li a:hover{
+    background-color: white;
+    color: rgb(63, 22, 91);
+}
+
+main a{
+    color: white;
+    font-family: 'Frutiger Bold';
+    font-size: 15pt;
+    margin: 20pt; 
+}
+main a:hover{
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.princ-for{
+    padding: 10pt 25pt 25pt 25pt;
+}
+.notic{
+    position: relative;
+    border-bottom: 1px solid white;
+    padding: 0;
+    margin: 20pt 0;
+    cursor: pointer;
+}
+.notic:hover{
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.notic h2,h4{
+    color: white;
+}
+.notic h2{
+    font-size: 25pt;
+}
+.notic h4{
+    font-family: 'Frutiger 45 Light';
+    font-size: 14pt;
+    color: rgb(204, 204, 204);
+}
+.notic img{
+    position: relative;
+    width: 100pt;
+    margin: 10pt;
+}
+.title-notic{
+    float: right;
+    margin-right: 10%;
+}
+.marcadores{
+    display: flex;
+    color: white;
+    margin-top: -10%;
+    margin-left: 40%;
+}
+.marcadores a{
+    font-size: 12pt;
+}
+.marcadores li{
+    margin:10pt;
+}
+.categ{
+    border: 2px solid rgb(255, 255, 255);
+}
+.categ h2{
+    color: white;
+    text-align:right;
+}
+
+.categ li{
+    color: white;
+    text-align: right;
+    width: 94%;
+    line-height: 10%;
+    font-family: 'Frutiger 45 Light'; 
+    font-size: 15pt;
+}
+.categ li:hover{
+    color:rgba(255, 255, 255, 0.521);
+}

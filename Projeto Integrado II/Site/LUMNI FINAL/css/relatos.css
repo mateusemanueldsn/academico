@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fontes/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fontes/Frutiger\ Bold.ttf");
+}
+
+body{
+    background-image: url("../imagens/bg-4.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    padding: 2em 6em;
+    background-color: rgba(22, 6, 22, 0.829);
+}
+h2{
+    text-align: left;
+    font-size: 3em;
+    line-height: 150%;
+}
+.rel {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+.rel li{
+    position: relative;
+    border: 6px solid white;
+    border-radius: 10%;
+    transition: 0.5s;
+    padding: 8em 4em;
+    margin: 10%;
+    z-index: 8;
+}
+
+.rel li a {
+    position: absolute;
+    color: white;
+}
+.rel li:hover{
+    -webkit-transform: scale(1.3);
+}
+
+.fundo{
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fundo p{
+    position: relative;
+    font-family: 'Frutiger 45 Light';
+    font-size: 15pt;
+    text-align: center;
+    top: 80%;
+}
+.fundo:hover{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#rel1{
+    background: url("../imagens/rel/r1.jpg") no-repeat;
+    background-size: cover;
+
+}
+#rel1:hover{
+    background-position: center center;
+}
+
+#rel2{
+    background: url("../imagens/rel/r2.jpg") no-repeat;
+    background-size: cover;
+
+}
+#rel2:hover{
+    background-position: center center;
+}
+
+#rel3{
+    background: url("../imagens/rel/r3.jpg") no-repeat;
+    background-size: cover;
+
+}
+#rel3:hover{
+    background-position: center center;
+}
+
+#rel4{
+    background: url("../imagens/rel/r4.jpg") no-repeat;
+    background-size: cover;
+
+}
+#rel4:hover{
+    background-position: center center;
+}
+
+.rel li img{
+    border-radius: 10%;
+}
+
+main button {
+    color: white;
+    background-color: rgba(57, 21, 82, 0.712);
+    border: none;
+    padding: 12pt;
+    border-radius: 10pt;
+    font-family: 'Frutiger Bold';
+    position: relative;
+    left: 46%;
+    outline: 0;
+}
+
+
+main button a{
+    color: white;
+    font-family: 'Frutiger Bold';
+}
+
+main button a:hover{
+    list-style: none;
+    color: white;
+}
+
+
+.env-rel p{
+    margin: 20pt 0;
+    text-align: center;
+}
+
+.env-rel input, textarea{
+    background-color: rgba(168, 168, 168, 0.24);
+    border: none;
+    padding: 15pt;
+    margin: 10pt 0;
+    width: 100%;
+    border-radius: 15pt;
+    outline: 0;
+    color: white;
+    font-family: 'Frutiger 45 Light'; 
+}
+.env-rel button{
+    position: relative;
+    left: 88%;
+}
+
+.env-rel button:hover{
+    background-color: white;
+    color: rgba(113, 32, 115, 0.76);
+}
