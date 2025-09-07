@@ -1,0 +1,23 @@
+.container-posts{
+    padding: 2em 4em 8em 4em;
+}
+.container-posts ul{
+    padding: 0;
+    margin: 0;
+}
+.galeria-posts{ 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4em;
+    margin: 2em 0;
+} 
+
+
+
+
+
+
+
+

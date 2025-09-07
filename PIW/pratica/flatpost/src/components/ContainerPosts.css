@@ -1,0 +1,63 @@
+.timelineposts{
+    padding: 6em 0 23em 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0pt 20pt;
+    margin: 0;
+}
+
+.post{
+    border-radius: 10pt;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 16pt 16pt 24pt 16pt;
+    margin: 30pt;
+    color: rgb(147, 67, 228);
+    text-align: left;
+    position: relative;
+}
+
+.post h2, p{
+    padding: 0;
+    margin: 0;
+	background: linear-gradient(to right, rgb(70, 118, 222), rgb(171, 77, 220) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.post button {
+    background: none;
+    border: none;
+    color: rgb(147, 67, 228);
+    position: absolute;
+    right: 10pt;
+    top: 20pt;
+    font-size: 15pt;
+    outline: none;
+    cursor: pointer;
+}
+.post button i {
+    font-size: 15pt;
+    position: relative;
+    top: 1pt;
+}
+
+.icon-15{
+    position: absolute;
+    top: -5pt;
+    right: -5pt;
+    font-size: 18pt;
+    color: rgb(70, 118, 222);
+    background-color: white;
+    border-radius: 50pt;
+    padding: 1pt;
+    cursor: pointer;
+}
+
+

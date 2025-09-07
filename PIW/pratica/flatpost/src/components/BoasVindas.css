@@ -1,0 +1,44 @@
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10em 0 20em 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.welcome h1{
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.welcome h3{
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+}
+.welcome button{
+    background:white;
+    font-weight: bold;
+    border: none;
+    margin-top: 15pt;
+    border-radius: 50pt;
+    cursor: pointer;
+    padding: 10pt;
+    outline: none;
+}
+
+.welcome button a{
+    background: linear-gradient(to right, rgb(70, 118, 222), rgb(171, 77, 220) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+

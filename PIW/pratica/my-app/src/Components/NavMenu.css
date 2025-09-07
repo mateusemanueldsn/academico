@@ -1,0 +1,67 @@
+.menu-superior{
+    background-color: #202c39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5pt 2em;
+}
+.menu-superior ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 5%;
+}
+.menu-superior button{
+    padding: 15pt;
+    font-weight: bold;
+    outline: 0;
+    border: none;
+    margin: 0 5pt;
+    border-radius: 30pt;
+    text-transform: uppercase;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5pt;
+}
+.user legend{
+    padding: 0;
+    margin: 0;
+
+}
+.user h1{
+    padding: 0;
+    margin: 0;
+    font-size: 22pt;
+}
+
+.button-pink{
+    background-color: #89023e;
+    cursor: pointer;
+    color: white;
+}
+.button-pink:hover{
+    background-color: white;
+    color: #89023e;
+}
+
+.button-blue{
+    background-color: #003559;
+    cursor: pointer;
+    color: white;
+}
+
+.button-blue:hover{
+    background-color: white;
+    color: #003559;
+}

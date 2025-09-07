@@ -1,0 +1,83 @@
+.iconLike{
+    width: 20%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 15pt;
+    background-color: white;
+    border-bottom: 5px solid #003559;
+    border-radius: 30pt;
+    margin: 10pt;
+    height: 70%;
+}
+
+.perfil-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin: 25pt 20pt 0 0;
+    width: 55pt;
+    position: relative;
+    text-align: center;
+}
+.perfil-post legend{
+    margin-top: 5pt;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.msg-post p{
+    margin-top: 25pt;
+    text-align: justify;
+}
+
+
+.perfil-post img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.like{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5%;
+    top: 5pt;
+    font-size: 13pt;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: 0;
+}
+.like:hover{
+    color: #003559;
+}
+.like p{
+    padding: 0;
+    color: black;
+    text-align: right;
+    margin-top: 15pt;
+    margin-left: 2pt;
+}
+.like p:hover{
+    color: #003559;
+}
+
+.time{
+    color: rgb(179, 179, 179);
+    position: absolute;
+    top: 0;
+    text-indent: 0;
+    margin: 18pt;
+    text-align: left;
+}

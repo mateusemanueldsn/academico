@@ -1,0 +1,51 @@
+nav {
+    background-color: rgba(245, 245, 245, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10pt;
+    color: white;
+}
+
+nav h1{
+    font-size: 16pt;
+    padding: 10pt 15pt;
+    border-right: 1pt solid white;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0 10pt;
+    margin: 0;
+    flex-grow: 2;
+}
+
+nav li{
+    margin: 0 10pt;
+    padding: 0;
+    cursor: pointer;
+}
+
+nav a{
+    color: white;
+}
+
+nav li:hover {
+    cursor: pointer;
+}
+
+.login{
+    border: none;
+    display: flex;
+    outline: none;
+    background:none;
+    padding: 10pt;
+    cursor: pointer;
+}
+
+.login:hover{
+    cursor: pointer;
+}

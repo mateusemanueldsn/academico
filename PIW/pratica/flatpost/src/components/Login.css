@@ -1,0 +1,60 @@
+.containerLogin{
+    padding: 6em 0 20em 0;
+}
+
+.containerLogin{
+    padding: 6em 0 20em 0;
+    color: white;
+}
+
+.containerLogin h2{
+    font-size: 3em;
+    margin: 0;
+}
+
+.containerLogin form{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 23em;
+    
+}
+
+.containerLogin form input, textarea{
+    background: rgb(255, 255, 255);
+    border: none;
+    margin: 10pt;
+    color: rgb(147, 67, 228);
+    font-size: 13pt;
+    padding: 15pt;
+    border-radius: 15pt;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+.submit{
+    background-color: white;
+    padding: 15pt;
+    border-radius: 0 0 15pt 15pt;
+    margin: -22pt 10pt 0 10pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.submit label{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submit a{
+    color: rgb(147, 67, 228);
+}
+.submit button{
+    border: none;
+    background-image:  linear-gradient(100deg, rgba(70, 118, 222, 0.900), rgba(171, 77, 220,0.900));
+    padding: 10pt 15pt;
+    border-radius:15pt;
+    font-weight: bold;
+    color: white;
+    font-size: 13pt;
+    cursor: pointer;
+}
