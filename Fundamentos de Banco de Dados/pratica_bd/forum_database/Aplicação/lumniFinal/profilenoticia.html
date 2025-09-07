@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Lumni</title>
+  <link rel="stylesheet" href="css/princ.css">
+  <link rel="stylesheet" href="icons/style.css" />
+  <link rel="stylesheet" href="css/mob-menu.css">
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/vertical-menu.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/conteudoVerticalMenu.css">
+  <link rel="stylesheet" href="css/forum.css">
+  <link rel="stylesheet" href="css/fs-busca.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/postnoticias.css">
+  <link rel="stylesheet" href="css/slide-index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/icon4.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body> 
+  <nav>
+    <img src="img/logo.png" id="logo" alt="">
+    <ul>
+        <li class="nav-link"><a href="index.html">INÍCIO</a></li>
+        <li class="nav-link"><a href="#">FÓRUM</a></li>
+        <li class="nav-link"><a href="#">LOJA</a></li>
+        <li class="nav-link"><a href="#">EVENTOS</a></li>
+        <li class="nav-link"><a href="#">RELATOS</a></li>
+        <li class="nav-link"><a href="#">SOBRE NÓS</a></li>
+        <li class="secundary-menu">
+            <form class="openBtn" action="" onclick="openSearch();">
+                <input type="text" placeholder="O que você procura?" name="busca">
+                <button type="submit"><i class="icon-B" id="lupa"></i></button>
+            </form>
+        </li>
+        
+        <li class="secundary-menu"><button><i class="icon-I sub-menu"></i></button></li>
+        <li id="loja" class="secundary-menu"><button><i class="icon-C sub-menu"><sup>0</sup></i></li>
+        <div class="dropdown">
+            <li class="secundary-menu" id="forum-user"><button class="dropbtn" onclick="DropUser();"><img
+                        src="img/perfil-forum.jpg" alt="">
+                    <legend>Boby</legend>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button></li>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="profile.html">Meu Perfil</a>
+                <a href="#">Sair</a>
+            </div>
+          </nav>
+  <!-- Menu Mobile -->
+  <div id="mob-menu" class="container-mob-menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="list-menus">
+      <a href="index.html">INÍCIO</a>
+      <a href="#">FÓRUM</a>
+      <a href="#">LOJA</a>
+      <a href="#">EVENTOS</a>
+      <a href="#">RELATOS</a>
+      <a href="#">SOBRE NÓS</a>
+    </div>
+  </div>
+  <!-- Menu Mobile de Busca Tela Cheia -->
+  <div id="fullscreen-search" class="container-src">
+    <span class="closebtn" onclick="closeSearch();">×</span>
+    <div class="container-src-full">
+      <form action="">
+        <input type="text" placeholder="O que você procura?" name="search">
+        <button type="submit"><i class="icon-B"></i></button>
+      </form>
+    </div> 
+  </div>
+  <section class="containerProfile">
+      <div class="aside-menu">
+          <ul>
+              <li><a href="profile.html"><i class="icon-U"></i><p>MEU PERFIL</p></a></li>
+              <li><a href="profilenoticia.html" class="marcado"><i class="icon-1"></i><p class="marcado" style="color: rgb(113, 32, 115);">NOTÍCIAS</p></a></li>
+              <li><a href="#"><i class="icon-C"></i><p>PRODUTOS</p></a></li>
+              <li><a href="#"><i class="icon-11"></i><p>MODERADORES</p></a></li>
+              <li><a href="#"><i class="icon-10"></i><p>COLABORADORES</p></a></li>
+              <li><a href="#"><i class="icon-13"></i><p>EVENTOS</p></a></li>
+              <li><a href="#"><i class="icon-P"></i><p>PROBLEMAS RELATADOS</p></a></li>
+              <li><a href="#"><i class="icon-7"></i><p>LIXEIRA</p></a></li>
+          </ul>
+      </div>
+      <div class="perfilconteudoVerticalMenu">
+          <div class="opcoesNoticia">
+            <form class="openBtn" action="" onclick="openSearch();">
+              <input type="search" placeholder="Buscar notícia" name="busca">
+              <button type="submit"><i class="icon-B" id="lupa"></i></button>
+            </form>
+            <button id="newN"><a href="cadnoticias.html">Cadastrar nova notícia</a></button>
+          </div>
+          <div class="containerNoticia">
+            <ul>
+              <li>
+                  <h2>Série do History grava episódio na cidade de Quixadá</h2>
+                  <div>
+                  <button><a href="atualizarnoticia.html">Alterar dados</a></button>
+                  <a href="viewnoticia.html"><i class="icon-5" style="font-size:2em"></i></a>
+                  <a href="profile.html"><i class="icon-7"style="font-size:2em"></i></a>
+                  </div>
+              </li>
+              <li>
+                <h2>Série do History grava episódio na cidade de Quixadá</h2>
+                <div>
+                <button><a href="atualizarnoticia.html">Alterar dados</a></button>
+                <a href="viewnoticia.html"><i class="icon-5" style="font-size:2em"></i></a>
+                <a href="profile.html"><i class="icon-7"style="font-size:2em"></i></a>
+                </div>
+              </li>
+              <li>
+                <h2>Série do History grava episódio na cidade de Quixadá</h2>
+                <div>
+                <button><a href="atualizarnoticia.html">Alterar dados</a></button>
+                <a href="viewnoticia.html"><i class="icon-5" style="font-size:2em"></i></a>
+                <a href="profile.html"><i class="icon-7"style="font-size:2em"></i></a>
+                </div>
+              </li>
+              <li>
+              <h2>Série do History grava episódio na cidade de Quixadá</h2>
+              <div>
+              <button><a href="atualizarnoticia.html">Alterar dados</a></button>
+              <a href="viewnoticia.html"><i class="icon-5" style="font-size:2em"></i></a>
+              <a href="profile.html"><i class="icon-7"style="font-size:2em"></i></a>
+              </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+  </section>
+  <footer>
+    <ul class="social">
+      <p>Siga nossas redes sociais:</p>
+      <li><a href="https://www.facebook.com/Lumni-Quixad%C3%A1-100732148033586/?modal=admin_todo_tour" target="_blank"
+          class="fa fa-facebook-official" style="font-size: 25px"></a></li>
+      <li><a href="https://www.instagram.com/lumniqoficial/" target="_blank" class="fa fa-instagram"
+          style="font-size: 25px"></a></li>
+      <li><a href="https://www.youtube.com/channel/UCUl6dEKOFaK24zm76G0HDrw?view_as=subscriber" target="_blank"
+          class="fa fa-youtube-play" style="font-size: 25px"></a></li>
+    </ul>
+    <br>
+    <p id="copy">&copy; 2020 By Portal Lumni, Todos os direitos reservados</p>
+  </footer>
+
+  </div>
+</body>
+    <script src="js/mob-menu.js"></script>
+    <script src="js/background-video.js"></script>
+    <script src="js/fullscreen-search.js"></script>
+    <script src="js/mostrar-modal.js"></script>
+    <script src="js/user-dropdown.js"></script>
+    <script src="js/control-menu-modal.js"></script>
+</html>
