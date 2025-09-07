@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: url('../src/fonts/SourceSansPro-Regular.ttf'); 
+}
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../src/fonts/SourceSansPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Source Sans SemiBold';
+  src: url('../src/fonts/SourceSansPro-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito Sans Regular';
+  src: url('../src/fonts/NunitoSans-Regular.ttf');
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #F9F0FF;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'Source Sans Pro Bold';
+}
+h2, h3{
+  font-family: 'Source Sans SemiBold';
+  margin: 0;
+}
+
+p, label, a, legend{
+  font-family: 'Nunito Sans Regular';
+}
+
+
+input:hover{
+  border: 1px solid #7f529a;
+  background-color: #F9F0FF;
+}
+textarea:hover{
+  border: 1px solid #7f529a;
+  background-color: #F9F0FF;
+}
+
+form input, textarea{
+  border: 1px solid #C1C0C0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 3.5px;
+  font-family: 'Nunito Sans Regular';
+  margin: 5px;
+  outline: none;
+}
+
+button{
+  outline: none;
+}

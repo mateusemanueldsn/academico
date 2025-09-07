@@ -1,0 +1,73 @@
+.PerfilUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PerfilUser .avatar{
+    background: #F9F0FF;
+    padding:0;
+    width: 40px;
+    display: flex;
+    border-radius: 50pt;
+    border: none;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #787878;
+    cursor: pointer;
+}
+
+.PerfilUser .notificacao{
+    border: none;
+    background: none;
+    font-size: 22px;
+    color: #7f529a;
+    margin: 0 5px;
+}
+
+.avatar {
+    color: #7f529a;
+    background-color: transparent;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdownPerfil {
+    position: relative;
+    display: flex;
+    margin: 0 0 0 2px;
+}
+
+.dropdownPerfilContent {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    background-color: #f9f9f9;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+  
+.dropdownPerfilContent span {
+    color: #7f529a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer
+}
+.dropdownPerfilContent span a {
+    color: #7f529a;
+}
+
+.dropdownPerfilContent span:hover {background-color: #f1f1f1}
+  
+.dropdownPerfil:hover .dropdownPerfilContent {
+    display: block;
+}
+  
+.dropdownPerfil:hover .avatar {
+    background-color: none;
+    
+}

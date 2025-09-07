@@ -1,0 +1,169 @@
+.ContainerServico{
+    display: flex;
+    padding: 0 8vw;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+.ContainerServico h2{
+    color: #7f529a;
+}
+.noservice {
+    padding: 10vh 0; 
+    width: 100%;
+}
+.noservice > p {
+    color: #919191;
+}
+.noservice > img {
+    height: 300px;
+}
+.topSessao{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    padding: 8.3em 0 15px 0;
+}
+.topSessao button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topSessao button i{
+    position: relative;
+    top:1px;
+    margin: 0 5px;
+    font-size: 15px;
+    color: white;
+}
+.topSessao h2{
+    display: flex;
+    margin: 0 10px 0 0;
+}
+.CardsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.listaServicos{
+    width: 100%; 
+    display: flex;
+    /*width: 1070px;*/
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+.listaServicos li{
+    padding: 15px;
+    margin:0 1vw 2vw 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    min-height: 10vh;
+    width: 240px;
+    cursor: pointer;
+}
+.listaServicos li button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.listaServicos li button i{
+    color: #7f529a;
+    font-size: 20px;
+}
+.listaServicos li > a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.listaServicos li h3{
+    font-size: 16px;
+    white-space: normal;
+}
+
+.listaServicos li div label{
+    text-align: left;
+    background-color: rgb(235, 235, 235);
+    margin: 5px 10px 0 0;
+    font-family: 'Nunito Sans Regular';
+    color: black;
+    font-size: 12px;
+    padding: 4px 13px;
+    border-radius: 10pt;
+}
+
+.listaServicos li div label div{
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opcoesProjetoBotao button i{
+    color: white;
+}
+
+.labelsSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+.topServico{
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.dropdownServico {
+    position: relative;
+    display: flex;
+    margin: 0 0 0 20px;
+}
+
+.dropdownServicoContent {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #f9f9f9;
+    width: 115px;
+    border-radius: 6px;
+    transition: 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+  
+.dropdownServicoContent span {
+    color: #7f529a;
+    padding: 4px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer
+}
+.dropdownServicoContent span a {
+    color: #7f529a;
+}
+
+.dropdownServicoContent span:hover, .dropdownServicoContent span a:hover {background-color: #7f529a; color: white;}
+  
+.dropdownServico:hover .dropdownServicoContent {
+    display: block;
+}
+  
+.dropdownServico:hover .avatar {
+    background-color: none;
+    
+}
